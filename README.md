@@ -39,7 +39,7 @@ cd Anomaly-detection-for-solder/
 pip install -r requirements.txt
 ```
 
-## Usage
+## Training Model
 Type -h to get description of the parameters for each script .py as the following:
 ```
 cd Anomaly-detection-for-solder/
@@ -52,3 +52,20 @@ To train Convolutional Autoencoder with reconstruction loss:
 cd Anomaly-detection-for-solder/
 python train.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
+
+To train beta-Variational Autoencoder with ELBO objective:
+```
+python train.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
+```
+
+To train Convolutional Autoencoder with gradient constraint:
+```
+python train_Gradloss.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
+```
+
+To train beta-Variational Autoencoder with gradient constraint:
+```
+python train_Gradloss.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
+```
+
+## Testing Model
