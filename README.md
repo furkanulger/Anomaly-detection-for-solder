@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ## Training Model
-Type -h to get description of the parameters for each script .py as the following:
+Type -h to get description of the parameters for each script ".py" as follows:
 ```
 cd Anomaly-detection-for-solder/
 python train.py -h 
