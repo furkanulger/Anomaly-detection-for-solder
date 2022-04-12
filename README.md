@@ -32,4 +32,9 @@ samples without designated hardware or feature engineering.
 
 <img width="643" alt="recons" src="https://user-images.githubusercontent.com/50952046/163036885-5e835ae1-b749-42a2-808a-9d104e7b271c.PNG">
 
-## Install and Run
+## Installation
+```
+git clone https://github.com/furkanulger/Anomaly-detection-for-solder.git
+cd Anomaly-detection-for-solder/
+pip install -r requirements.txt`
+```
