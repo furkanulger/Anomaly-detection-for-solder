@@ -1,6 +1,6 @@
 # Anomaly Detection for Solder Joints Using *β*-VAE
 
-This repository is the implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
+This repository contains the implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
 
 Ulger, Furkan, Seniha Esen Yuksel, and Atila Yilmaz. "Anomaly Detection for Solder Joints Using *β*-VAE." IEEE Transactions on Components, Packaging and Manufacturing Technology 11.12 (2021): 2214-2221.
 
@@ -37,4 +37,18 @@ samples without designated hardware or feature engineering.
 git clone https://github.com/furkanulger/Anomaly-detection-for-solder.git
 cd Anomaly-detection-for-solder/
 pip install -r requirements.txt
+```
+
+## Usage
+Type -h to get description of the parameters for each script .py as the following:
+```
+cd Anomaly-detection-for-solder/
+python train.py -h 
+```
+<img width="360" alt="help" src="https://user-images.githubusercontent.com/50952046/163048549-3ef7018e-da99-4644-bff5-62789a25425a.PNG">
+
+To train Convolutional Autoencoder with reconstruction loss:
+```
+cd Anomaly-detection-for-solder/
+python train.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
