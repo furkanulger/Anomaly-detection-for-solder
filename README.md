@@ -30,4 +30,6 @@ Finally, we show that anomalies on solder joints can be detected
 with high accuracy via a model trained directly on normal
 samples without designated hardware or feature engineering.
 
+<img width="643" alt="recons" src="https://user-images.githubusercontent.com/50952046/163036885-5e835ae1-b749-42a2-808a-9d104e7b271c.PNG">
 
+## Install and Run
