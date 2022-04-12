@@ -1,8 +1,8 @@
-# Anomaly detection for solder joints using beta-VAE
+# Anomaly Detection for Solder Joints Using *β*-VAE
 
-This repository is the implementation for the paper titled "Anomaly Detection for Solder Joints using beta-VAE".
+This repository is the implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
 
-Ulger, Furkan, Seniha Esen Yuksel, and Atila Yilmaz. "Anomaly Detection for Solder Joints Using β-VAE." IEEE Transactions on Components, Packaging and Manufacturing Technology 11.12 (2021): 2214-2221.
+Ulger, Furkan, Seniha Esen Yuksel, and Atila Yilmaz. "Anomaly Detection for Solder Joints Using *β*-VAE." IEEE Transactions on Components, Packaging and Manufacturing Technology 11.12 (2021): 2214-2221.
 
 [[IEEE Xplore]](https://ieeexplore.ieee.org/document/9579423) [[arXiv]](https://arxiv.org/abs/2104.11927)
 
