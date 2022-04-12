@@ -1,0 +1,61 @@
+appdirs==1.4.3
+backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
+captum==0.4.1
+certifi==2021.10.8
+charset-normalizer==2.0.12
+colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
+cycler==0.10.0
+decorator @ file:///tmp/build/80754af9/decorator_1617916966915/work
+distlib==0.3.0
+docopt==0.6.2
+filelock==3.0.12
+idna==3.3
+ipykernel @ file:///C:/ci/ipykernel_1596190155316/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython @ file:///C:/ci/ipython_1617121002983/work
+ipython-genutils @ file:///tmp/build/80754af9/ipython_genutils_1606773439826/work
+jedi==0.17.0
+joblib @ file:///tmp/build/80754af9/joblib_1613502643832/work
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1616770841739/work
+jupyter-core @ file:///C:/ci/jupyter_core_1612213356021/work
+kiwisolver @ file:///C:/ci/kiwisolver_1612282606037/work
+matplotlib @ file:///C:/ci/matplotlib-base_1603355780617/work
+mkl-fft==1.3.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+numpy @ file:///C:/ci/numpy_and_numpy_base_1603466732592/work
+olefile==0.46
+pandas @ file:///C:/ci/pandas_1618365634936/work
+parso @ file:///tmp/build/80754af9/parso_1617223946239/work
+pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
+Pillow @ file:///C:/ci/pillow_1609786840597/work
+pipreqs==0.4.11
+prompt-toolkit @ file:///tmp/build/80754af9/prompt-toolkit_1616415428029/work
+Pygments @ file:///tmp/build/80754af9/pygments_1615143339740/work
+pyparsing @ file:///home/linux1/recipes/ci/pyparsing_1610983426697/work
+python-dateutil @ file:///home/ktietz/src/ci/python-dateutil_1611928101742/work
+pytz @ file:///tmp/build/80754af9/pytz_1612215392582/work
+pywin32==227
+pyzmq==20.0.0
+requests==2.27.1
+scikit-learn @ file:///D:/bld/scikit-learn_1608656402924/work
+scipy @ file:///C:/ci/scipy_1616703433439/work
+sip==4.19.13
+six==1.14.0
+skorch @ file:///home/conda/feedstock_root/build_artifacts/skorch_1616545272880/work
+tabulate @ file:///home/conda/feedstock_root/build_artifacts/tabulate_1614001031686/work
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+torch==1.7.1
+torchaudio==0.7.2
+torchinfo==1.5.3
+torchsummary==1.5.1
+torchvision==0.8.2
+tornado @ file:///C:/ci/tornado_1606942392901/work
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1625664838498/work
+traitlets @ file:///home/ktietz/src/ci/traitlets_1611929699868/work
+ttach @ file:///home/conda/feedstock_root/build_artifacts/ttach_1639922534332/work
+typing-extensions @ file:///home/ktietz/src/ci_mi/typing_extensions_1612808209620/work
+urllib3==1.26.9
+virtualenv==20.0.3
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+wincertstore==0.2
+yarg==0.1.9
