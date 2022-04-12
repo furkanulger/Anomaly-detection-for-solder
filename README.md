@@ -36,5 +36,5 @@ samples without designated hardware or feature engineering.
 ```
 git clone https://github.com/furkanulger/Anomaly-detection-for-solder.git
 cd Anomaly-detection-for-solder/
-pip install -r requirements.txt`
+pip install -r requirements.txt
 ```
