@@ -1,6 +1,6 @@
 # Anomaly Detection for Solder Joints Using *β*-VAE
 
-This repository contains the implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
+This repository contains the PyTorch implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
 
 Ulger, Furkan, Seniha Esen Yuksel, and Atila Yilmaz. "Anomaly Detection for Solder Joints Using *β*-VAE." IEEE Transactions on Components, Packaging and Manufacturing Technology 11.12 (2021): 2214-2221.
 
@@ -38,6 +38,9 @@ git clone https://github.com/furkanulger/Anomaly-detection-for-solder.git
 cd Anomaly-detection-for-solder/
 pip install -r requirements.txt
 ```
+## About the Dataset
+The dataset used in the paper is private, therefore you need to use your own dataset. The dataset folder structure should be as follows:
+
 
 ## Training Model
 Type -h to get description of the parameters for each script ".py" as follows:
@@ -97,3 +100,8 @@ To test beta-VAE with gradient constraint as an anomaly score:
 ```
 python test_Gradloss.py -m VAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE -b 3
 ```
+
+## Acknowledgements
+[[olivesgatech/gradcon-anomaly]](https://github.com/olivesgatech/gradcon-anomaly)
+[[Pytorch-VAE]](https://github.com/pytorch/examples/tree/main/vae)
+[[yunjey-VAE]](https://github.com/yunjey/pytorch-tutorial/blob/master/tutorials/03-advanced/variational_autoencoder/main.py#L38-L65)
