@@ -60,7 +60,7 @@ Type -h to get description of the parameters for each script ".py" as follows:
 cd Anomaly-detection-for-solder/
 python train.py -h 
 ```
-<img src="https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png" width="400" height="200">
 
 To train Convolutional Autoencoder with reconstruction loss:
 ```
@@ -89,7 +89,7 @@ Type -h to get description of the parameters for each script ".py" as follows:
 cd Anomaly-detection-for-solder/
 python test.py -h 
 ```
-<img src="https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png" width="500" height="300">
+<img src="https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png" width="400" height="200">
 
 To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
 ```
