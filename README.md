@@ -40,16 +40,27 @@ pip install -r requirements.txt
 ```
 ## About the Dataset
 The dataset used in the paper is private, therefore you need to use your own dataset. The dataset folder structure should be as follows:
-
-
+```
+    .
+    ├── dataset                   
+    │   ├── train 
+    │   ├── validation        
+    │   └── test    
+    │        ├── normal
+    │        ├── anomaly
+    │            ├──image1.png
+    │            ├──image2.png
+    │                .
+    │                .    
+    └── ...
+```
 ## Training Model
 Type -h to get description of the parameters for each script ".py" as follows:
 ```
 cd Anomaly-detection-for-solder/
 python train.py -h 
 ```
-![image](https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png)
-
+<img src="https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png" width="500" height="300">
 
 To train Convolutional Autoencoder with reconstruction loss:
 ```
@@ -78,8 +89,7 @@ Type -h to get description of the parameters for each script ".py" as follows:
 cd Anomaly-detection-for-solder/
 python test.py -h 
 ```
-![image](https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png)
-
+<img src="https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png" width="500" height="300">
 
 To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
 ```
