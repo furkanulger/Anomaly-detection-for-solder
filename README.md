@@ -45,7 +45,8 @@ Type -h to get description of the parameters for each script ".py" as follows:
 cd Anomaly-detection-for-solder/
 python train.py -h 
 ```
-<img width="360" alt="help" src="https://user-images.githubusercontent.com/50952046/163048549-3ef7018e-da99-4644-bff5-62789a25425a.PNG">
+![image](https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png)
+
 
 To train Convolutional Autoencoder with reconstruction loss:
 ```
@@ -69,3 +70,15 @@ python train_Gradloss.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-
 ```
 
 ## Testing Model
+Type -h to get description of the parameters for each script ".py" as follows:
+```
+cd Anomaly-detection-for-solder/
+python test.py -h 
+```
+![image](https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png)
+
+
+To train Convolutional Autoencoder with reconstruction loss:
+```
+python test.py -m CAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a Recon -th THRESHOLD_VALUE 
+```
