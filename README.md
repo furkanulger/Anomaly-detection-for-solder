@@ -78,7 +78,22 @@ python test.py -h
 ![image](https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png)
 
 
-To train Convolutional Autoencoder with reconstruction loss:
+To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
 ```
 python test.py -m CAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a Recon -th THRESHOLD_VALUE 
+```
+
+To test beta-VAE with ELBO as an anomaly score:
+```
+python test.py -m VAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a ELBO -th THRESHOLD_VALUE -b 3
+```
+
+To test Convolutional Autoencoder with gradient constraint as an anomaly score:
+```
+python test_Gradloss.py -m CAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE 
+```
+
+To test beta-VAE with gradient constraint as an anomaly score:
+```
+python test_Gradloss.py -m VAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE -b 3
 ```
