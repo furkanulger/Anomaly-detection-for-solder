@@ -102,6 +102,9 @@ python test_Gradloss.py -m VAE -p .\Results\Model_checkpoints\checkpoint_minVal.
 ```
 
 ## Acknowledgements
+
 [[olivesgatech/gradcon-anomaly]](https://github.com/olivesgatech/gradcon-anomaly)
+
 [[Pytorch-VAE]](https://github.com/pytorch/examples/tree/main/vae)
+
 [[yunjey-VAE]](https://github.com/yunjey/pytorch-tutorial/blob/master/tutorials/03-advanced/variational_autoencoder/main.py#L38-L65)
