@@ -56,61 +56,63 @@ The dataset used in the paper is private, therefore you need to use your own dat
     └── ...
 ```
 ## Training Model
-Type -h to get description of the parameters for each script ".py" as follows:
-```
-cd Anomaly-detection-for-solder/
-python train.py -h 
-```
-<img src="https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png" width="400" height="200">
 
-To train Convolutional Autoencoder with reconstruction loss:
-```
+```python
+# To train Convolutional Autoencoder with reconstruction loss:
 cd Anomaly-detection-for-solder/
 python train.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
 
-To train beta-Variational Autoencoder with ELBO objective:
-```
+```python
+# To train beta-Variational Autoencoder with ELBO objective:
 python train.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
 
-To train Convolutional Autoencoder with gradient constraint:
-```
+```python
+# To train Convolutional Autoencoder with gradient constraint:
 python train_Gradloss.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
 
-To train beta-Variational Autoencoder with gradient constraint:
-```
+```python
+# To train beta-Variational Autoencoder with gradient constraint:
 python train_Gradloss.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
 
-## Testing Model
 Type -h to get description of the parameters for each script ".py" as follows:
 ```
-cd Anomaly-detection-for-solder/
-python test.py -h 
+python train.py -h 
 ```
-<img src="https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png" width="400" height="200">
+<img src="https://user-images.githubusercontent.com/50952046/163218586-b08e9e4e-7e0d-4faf-b7c3-5c9701d5a244.png" width="400" height="200">
 
-To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
-```
+- - - -
+## Testing Model
+
+```python
+# To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
+cd Anomaly-detection-for-solder/
 python test.py -m CAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a Recon -th THRESHOLD_VALUE 
 ```
 
-To test beta-VAE with ELBO as an anomaly score:
-```
+```python
+# To test beta-VAE with ELBO as an anomaly score:
 python test.py -m VAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a ELBO -th THRESHOLD_VALUE -b 3
 ```
 
-To test Convolutional Autoencoder with gradient constraint as an anomaly score:
-```
+```python
+# To test Convolutional Autoencoder with gradient constraint as an anomaly score:
 python test_Gradloss.py -m CAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE 
 ```
 
-To test beta-VAE with gradient constraint as an anomaly score:
-```
+```python
+# To test beta-VAE with gradient constraint as an anomaly score:
 python test_Gradloss.py -m VAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE -b 3
 ```
+
+Type -h to get description of the parameters for each script ".py" as follows:
+```
+python test.py -h 
+```
+<img src="https://user-images.githubusercontent.com/50952046/163220891-6040cd4c-e2a6-4ad0-b480-fed2bf2123fe.png" width="400" height="200">
 
 ## Acknowledgements
 
