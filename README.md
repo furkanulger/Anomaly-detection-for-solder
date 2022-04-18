@@ -61,19 +61,13 @@ The dataset used in the paper is private, therefore you need to use your own dat
 # To train Convolutional Autoencoder with reconstruction loss:
 cd Anomaly-detection-for-solder/
 python train.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
-```
 
-```python
 # To train beta-Variational Autoencoder with ELBO objective:
 python train.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
-```
 
-```python
 # To train Convolutional Autoencoder with gradient constraint:
 python train_Gradloss.py -m CAE -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
-```
 
-```python
 # To train beta-Variational Autoencoder with gradient constraint:
 python train_Gradloss.py -m VAE -b(optional) 3 -bs(optional) 8 -lr(optional) 1e-4 -e(optional) 100
 ```
@@ -91,19 +85,13 @@ python train.py -h
 # To test Convolutional Autoencoder with reconstruction loss as an anomaly score:
 cd Anomaly-detection-for-solder/
 python test.py -m CAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a Recon -th THRESHOLD_VALUE 
-```
 
-```python
 # To test beta-VAE with ELBO as an anomaly score:
 python test.py -m VAE -p .\Results\Model_checkpoints\model_lowest_val_loss.pt -a ELBO -th THRESHOLD_VALUE -b 3
-```
 
-```python
 # To test Convolutional Autoencoder with gradient constraint as an anomaly score:
 python test_Gradloss.py -m CAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE 
-```
 
-```python
 # To test beta-VAE with gradient constraint as an anomaly score:
 python test_Gradloss.py -m VAE -p .\Results\Model_checkpoints\checkpoint_minVal.pth.tar -th THRESHOLD_VALUE -b 3
 ```
