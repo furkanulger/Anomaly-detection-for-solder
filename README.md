@@ -1,6 +1,6 @@
 # Anomaly Detection for Solder Joints Using *β*-VAE
 
-This repository contains the PyTorch implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
+This repository contains PyTorch implementation for the paper titled "Anomaly Detection for Solder Joints Using *β*-VAE".
 If you find this repository useful, please give reference to the paper:
 
 Ulger, Furkan, Seniha Esen Yuksel, and Atila Yilmaz. "Anomaly Detection for Solder Joints Using *β*-VAE." IEEE Transactions on Components, Packaging and Manufacturing Technology 11.12 (2021): 2214-2221.
