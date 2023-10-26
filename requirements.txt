@@ -1,7 +1,7 @@
 appdirs==1.4.3
 backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
 captum==0.4.1
-certifi==2021.10.8
+certifi==2023.7.22
 charset-normalizer==2.0.12
 colorama @ file:///tmp/build/80754af9/colorama_1607707115595/work
 cycler==0.10.0
